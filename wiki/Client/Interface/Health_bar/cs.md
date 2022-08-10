@@ -13,12 +13,12 @@ tags:
 
 **Ukazatel zdraví** (známý také jako *HP bar*) ukazuje hráčovo zbývající [zdraví](/wiki/Gameplay/Health). Ve všech [herních módech](/wiki/Game_mode) kromě [osu!mania](/wiki/Game_mode/osu!mania), se objevuje ukazatel znázorňující zbývající zdraví.
 
-V [osu!](/wiki/Game_mode/osu!) a [osu!catch](/wiki/Game_mode/osu!catch), if the health bar drains completely, the player will fail the current [beatmap](/wiki/Beatmap) (assuming no special game modifiers are enabled).
+V [osu!](/wiki/Game_mode/osu!) a [osu!catch](/wiki/Game_mode/osu!catch), se po úplném vyčerpání zdraví mapa předčasně ukončí (dále známo jako *failnout [beatmapu](/wiki/Beatmap)*) (za předpokladu že nebyly použity určité módy).
 
-In [osu!taiko](/wiki/Game_mode/osu!taiko), it is impossible to fail a beatmap *during* play, but it is possible to fail after the beatmap has ended if the player has not filled the health bar enough.
+V [osu!taiko](/wiki/Game_mode/osu!taiko), je během *hraní* nemožné beatmapu *failnout*, místo toho se mapa ukončí po skončení mapy, a to za předpokladu že hráč nedostatečně Ukazatel naplnil.
 
-In osu!, osu!catch, and osu!taiko, the health bar is displayed in the top-left corner of the screen. Whereas in osu!mania, it is rotated 90 degrees counterclockwise, and is placed to the right of the playfield.
+V osu!, osu!catch, a osu!taiko, je Ukazatel zdraví v levém horním rohu, výjimkou je osu!mania, kde je otočený o 90°, a nachází se vedle hracího pole.
 
-In osu! and osu!catch, the health bar will drain at a constant rate throughout the course of a beatmap, with the exception of breaks. This effect is known as [health drain](/wiki/Beatmapping/Health_drain).
+V osu! a osu!catch, se během hraní, s výjimkou přestávek, konstantně zdraví vyčerpává. Tomuto efektu říkáme [health drain](/wiki/Beatmapping/Health_drain).
 
 <!-- TODO: Add links and stuff -->
