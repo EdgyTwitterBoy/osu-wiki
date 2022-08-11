@@ -30,27 +30,38 @@ Z většiny obrazovek v osu! jste schopni pomocí stisknutí `F8` nebo kliknutí
 
 *[osu!academy](/wiki/Community/Video_series/osu!academy) tuto část vysvětlila v [Episodě 6 (6:52)](https://www.youtube.com/watch?v=cyYRl-a5xII) společně s [Multiplayer](/wiki/Client/Interface/Multiplayer).*
 
-From most screens in osu! you can press `F9` or click the `Online Users` button at the lower right of the Intro Screen to toggle the Extended Chat Console. In addition to the Chat Console, Extended Chat overlays a list of panels in the remaining two thirds of the screen, displaying information on the users currently signed in to osu!
+Stejně jako u Chatové Konzole jste schopni vyvolat Rozšířenou Chatovou Konzolu stisknutím `F9` nebo zmáčknutím tlačítka `Online Users`, které se nachází v pravém dolním rohu Chatové Konzoly. Společně s Chatovací Konzolou, Rozšířená Chatová Konzole zaplní zbývající místo na obrazovce okny, které zobrazují všechny přihlášené hráče *(tj. ti hráči kteří jsou právě přihlášení do osu! klienta)*.
 
 ![Extended chat console](img/Chat_Console-Extended.png "Extended chat console")
 
-Each user signed in to osu! has a user panel displayed in Extended Chat. By default, it displays general information (name, total ranked score, rank, accuracy, play count and the user's avatar, if any). When the mouse cursor is placed over it, it displays a different set of information (name, rank, avatar if any, local time, time zone, location by country and, if allowed by the user, city, and what they are doing).
+Každý hráč zde má svůj panel zobrazující jeho jméno, avatar, celkové hodnocené skóre, rank, přesnost a počet zahrání. Pokud je na panelu kurzor, panel začne zobrazovat jiné informace, tj. hráčovo jméno, rank, avatar, místní čas, časová zóna, země ze které je uživatel přihlášen (podle IP), město a co uživatel dělá (poslední dvě vyžadují schválení uživatelem).
 
-- Friends only limits the display to your friends.
-- Lock Panels stops the panels from jumping round this also includes new users.
-- Click on a tab to sort user panels according to that attribute.
-- Click on the world map to display a world map that shows where everyone is.
-- You can click and drag on the white box to scroll, you can also use the mouse wheel.
-- Users without stats in their panels are connected to chat using their IRC clients.
+V horní části obrazovky jsou dostupné funkce schopné přihlášené uživatele filtrovat a seřazovat. Tyto čtyři funkce popíši shora dolů a zleva doprava.
 
-| Panel colour | Description |
+V políčku `Filtr` uživatele filtrujete pomocí čtyř filtrů
+
+| Filtr | Efekt |
 | :-- | :-- |
-| ![Player is idle](img/Chat_Console-Idle.png "Player is idle") | Dark Blue - Player is currently idle or not doing anything or just chatting. |
-| ![Player is playing](img/Chat_Console-Playing.png "Player is playing") | Grey - Playing a beatmap in solo. |
-| ![Player is watching](img/Chat_Console-Watching.png "Player is watching") | Light Blue - Watching a replay or spectating someone. |
-| ![Player is editing a beatmap](img/Chat_Console-Editing.png "Player is editing a beatmap") | Red - Editing their own beatmap. |
-| ![Player is testing a beatmap](img/Chat_Console-Testing.png "Player is testing a beatmap") | Purple - Test playing a beatmap in the editor. |
-| ![Player is submitting a beatmap](img/Chat_Console-Submitting.png "Player is submitting a beatmap") | Turquoise - Submitting (either uploading or updating) the beatmap that they have made. |
+|**Všichni**| žádný |
+|**Přátelé**| Zobrazí pouze vaše přátele |
+|**Poblíž**| Zobrazí hráče blízko vás |
+|**Země**| Zobrazí hráče z vaší země|
+
+Kontrolka `Zamknout panely` znemožní uživatelským panelům se pohybovat. 
+*Poznámka: tato možnost nebude zobrazovat nově přihlášené uživatele!*
+
+Políčko `Hledat` hledá uživatele podle jejich jména.
+
+Pomocí čtyř ikon herních módů v osu! jste schopni filtrovat uživatele podle jejich preferovaného módu.
+ 
+| Obrázek | Popis |
+| :-- | :-- |
+| ![Hráč je nečinný](img/Chat_Console-Idle.png "Hráč je nečinný") | Tmavě modrá - Hráč je nečinný. |
+| ![Hráč hraje](img/Chat_Console-Playing.png "Hráč hraje") | Šedá - Hráč hraje beatmapu v hře pro jednoho. |
+| ![Hráč se dívá](img/Chat_Console-Watching.png "Hráč se dívá") | Světle modrá - Hráč se dívá na záznam nebo někoho sleduje. |
+| ![Hráč upravuje beatmapu](img/Chat_Console-Editing.png "Hráč upravuje beatmapu") | Červená - Hráč upravuje svoji beatmapu. |
+| ![Hráč testuje beatmapu](img/Chat_Console-Testing.png "Hráč testuje beatmapu") | Fialová - Hráč zkouší hrát beatmapu v editoru. |
+| ![Hráč odesílá beatmapu](img/Chat_Console-Submitting.png "Hráč odesílá beatmapu") | Tyrkysová - Hráč odesílá (buď ji odesílá nebo aktualizuje) jeho beatmapu. |
 | ![Player is modding a beatmap](img/Chat_Console-Modding.png "Player is modding a beatmap") | Green - Modding or editing someone else's beatmap. |
 | ![Player in Multiplayer](img/Chat_Console-Multiplayer.png "Player in Multiplayer") | Brown - User is in multiplayer, but not playing. |
 | ![Player is playing in Multiplayer](img/Chat_Console-Multiplaying.png "Player is playing in Multiplayer") | Yellow - Currently playing in multiplayer. |
