@@ -38,7 +38,7 @@ Každý hráč zde má svůj panel zobrazující jeho jméno, avatar, celkové h
 
 V horní části obrazovky jsou dostupné funkce schopné přihlášené uživatele filtrovat a seřazovat. Tyto čtyři funkce popíši shora dolů a zleva doprava.
 
-V políčku `Filtr` uživatele filtrujete pomocí čtyř filtrů
+V políčku `Filtr` uživatele filtrujete pomocí čtyř filtrů:
 
 | Filtr | Efekt |
 | :-- | :-- |
@@ -62,51 +62,51 @@ Pomocí čtyř ikon herních módů v osu! jste schopni filtrovat uživatele pod
 | ![Hráč upravuje beatmapu](img/Chat_Console-Editing.png "Hráč upravuje beatmapu") | Červená - Hráč upravuje svoji beatmapu. |
 | ![Hráč testuje beatmapu](img/Chat_Console-Testing.png "Hráč testuje beatmapu") | Fialová - Hráč zkouší hrát beatmapu v editoru. |
 | ![Hráč odesílá beatmapu](img/Chat_Console-Submitting.png "Hráč odesílá beatmapu") | Tyrkysová - Hráč odesílá (buď ji odesílá nebo aktualizuje) jeho beatmapu. |
-| ![Player is modding a beatmap](img/Chat_Console-Modding.png "Player is modding a beatmap") | Green - Modding or editing someone else's beatmap. |
-| ![Player in Multiplayer](img/Chat_Console-Multiplayer.png "Player in Multiplayer") | Brown - User is in multiplayer, but not playing. |
-| ![Player is playing in Multiplayer](img/Chat_Console-Multiplaying.png "Player is playing in Multiplayer") | Yellow - Currently playing in multiplayer. |
-| ![Player is Afk](img/Chat_Console-Afk.png "Player is Afk") | Black - Inactive or away from keyboard (afk). |
-| ![Player is connected via IRC](img/Chat_Console-IRC.png "Player is connected via IRC") | Dark Blue without content - Player is not in-game, but signed in to an IRC client or stats are not available. |
+| ![Hráč modduje beatmapu](img/Chat_Console-Modding.png "Hráč modduje beatmapu") | Green - Modding or editing someone else's beatmap. |
+| ![Hráč ve hře pro více hráčů](img/Chat_Console-Multiplayer.png "Hráč ve hře pro více hráčů") | Hnědá - Hráč je v místnosti pro více hráčů, ale nehraje. |
+| ![Hráč hraje ve hře pro více hráčů](img/Chat_Console-Multiplaying.png "Player is playing in Multiplayer") | Žlutá - Hráč právě hraje v místnosti pro více hráčů. |
+| ![Hráč je AFK](img/Chat_Console-Afk.png "Hráč je AFK") | Černá - Neaktivní nebo AFK. |
+| ![Hráč je připojen přes IRC](img/Chat_Console-IRC.png "Hráč je připojen přes IRC") | Tmavě modrá bez obsahu - Hráč není ve hře, ale je připojen přes IRC klienta nebo nejsou dostupné informace. |
 
-Clicking on any user panel brings up an options screen.
+Kliknutím na uživatelský panel vyvoláte možnosti.
 
-![User panel options](img/Chat_Console-Userpaneloptions.jpg "User panel options")
+![Možnosti uživatelského panelu](img/Chat_Console-Userpaneloptions.jpg "Možnosti uživatelského panelu")
 
-Press the number or click the bar to activate:
+Stiskněte číslo nebo klikněte na tlačítko.
 
-1. `Start Spectating`: If the user is playing a beatmap and you have the beatmap, you can watch them while they play. Your name will be in their Spectators list.
-2. `View Profile`: Opens the player profile webpage in your browser.
-3. `Start Chat`: Opens a private chat tab with the user.
-4. `Invite to game`: (If you are in the Multi room) Request the user to come to your room.
-5. `Add (Remove) as Friend`: Adds (Removes) the user at your friends list
-6. `Report User`: Report the user for misbehaviour. Should never be used unless stated otherwise. You can report a user in-game for a number of things, but also on the web, like the forums.
-7. `Ignore User`: Any chat entry by the user will not appear in your chat console.
-8. `Close`: Closes the panel.
+1. `Začít sledovat`: Pokud hráč, kterého chcete sledovat, hraje beatmapu, a vy ji máte, můžete ho sledovat. Vaše jméno bude zobrazeno v jeho seznamu sledujících.
+2. `Zobrazit profil`: Otevře uživatelovu profilovou stránku ve vašem prohlížeči.
+3. `Začít konverzaci`: Otevře soukromou komunikaci s uživatelem.
+4. `Pozvat do hry`: (Pokud jste v Multi Lobby) Pozve uživatele do vašeho Multi Lobby.
+5. `Přidat (odebrat) přítele`: Přidá, nebo odebere, uživatele z vašeho (na váš) seznamu přátel.
+6. `Nahlásit uživatele`: Nahlásit uživatele za nevhodné chování. Nemělo by být zneužito. Uživatele můžete nahlásit z různých důvodů, a to i na osu! webu, třeba ve fórech.
+7. `Blokovat uživatele`: Cokoli co daný uživatel napíše do chatu se vám nezobrazí.
+8. `Zavřít`: Zavře dialog.
 
-## Commands list
+## Seznam příkazů
 
 ### /help
 
-| Command | Effect | Example | BanchoBot response |
+| Příkaz | Efekt | Příklad | Odpověď [BanchoBota](/wiki/BanchoBot "Článek o BanchoBotovi") |
 | :-- | :-- | :-- | :-- |
-| `/addfriend [user]` | Add `[user]` to your friends list. | `/addfriend Amigo` | You are now friends with Amigo. |
-| `/delfriend [user]` | Remove `[user]` from your friends list. | `/delfriend Amigo` | You are no longer friends with Amigo. |
-| `/away [message]` | Sets an away message (sent to users PMing you). Leave message blank to cancel. | `/away I am John Smith.` | You have been marked as being away: I am John Smith. When Amigo /msg John Where are you~? BanchoBot: I am John Smith. |
-| `/bb` | Sends a message to Bancho to execute a command like `!stats [user]` | `/bb !stats Uan` | \[15/11/12\] Stats for [Uan](https://osu.ppy.sh/users/147623): Score: 47,323,299,680 (#1) Plays: 176293 (lv102) Accuracy: 98.95% |
-| `/chat [user]` | Open a new chat tab with specified user. | `/chat Amigo` | (Amigo tab is opened) |
-| `/clear` | Clears the current chat buffer. | `/clear` | (Clears basically everything on the current tab) |
-| `/ignore [user][@chp]` | Ignore all messages from specified user for this session. By adding an @ followed by the letters, c, h, and/or p, you may ignore them in chat, [highlights](Highlight), or PMs respectively. | `/ignore Amigo@chp` | BanchoBot: You will no longer hear Amigo {chat} {highlights} {PM} (Your chat console is set to: ignore any text written by Amigo \[c\], any possible text highlighting you by Amigo \[h\] any Private Message sent to you by Amigo \[p\]) |
-| `/j [channel]` or `/join [channel]` | Joins the specified channel | `/join #lobby` | (#lobby tab is opened) |
+| `/addfriend [uživatel]` | Přidá `[uživatele]` do vašeho seznamu přátel. | `/addfriend Amigo` | You are now friends with Amigo. |
+| `/delfriend [uživatel]` | Odebere `[uživatel]` z vašeho seznamu přátel. | `/delfriend Amigo` | You are no longer friends with Amigo. |
+| `/away [zpráva]` | Nastaví zprávu když nejste dostupní (posílá se uživatelům kteří vám píšou soukromě). Pro zrušení nechte políčko prázdné. | `/away I am John Smith.` | You have been marked as being away: I am John Smith. When Amigo /msg John Where are you~? BanchoBot: I am John Smith. |
+| `/bb` | Pošle zprávu BanchoBotovi příkaz jako `!stats [uživatel]` | `/bb !stats Uan` | \[15/11/12\] Stats for [Uan](https://osu.ppy.sh/users/147623): Score: 47,323,299,680 (#1) Plays: 176293 (lv102) Accuracy: 98.95% |
+| `/chat [uživatel]` | Otevře novou komunikaci s dotyčným uživatelem. | `/chat Amigo` | (Záložka Amigo se otevře) |
+| `/clear` | Vyčistí dočasnou komunikaci. | `/clear` | (Odstraní vlastně vše v otevřené záložce) |
+| `/ignore [uživatel][@chp]` | Ignorovat zprávy od specifikovaného uživatele for this session. Přidáním @ a písmen, c, h, a/nebo p, uživatele ignorujete v chatu, [highlightech](Highlight), nebo v soukromých komunikacích. | `/ignore Amigo@chp` | BanchoBot: You will no longer hear Amigo {chat} {highlights} {PM} (Your chat console is set to: ignore any text written by Amigo \[c\], any possible text highlighting you by Amigo \[h\] any Private Message sent to you by Amigo \[p\]) |
+| `/j [channel]` nebo `/join [channel]` | Joins the specified channel | `/join #lobby` | (#lobby tab is opened) |
 | `/p` or `/part` | Leaves the current channel you're parting or leaving. | `/part` | n/a |
-| `/unignore [user]` | Stop ignoring this user for this session. | `/unignore Amigo` | You may now hear Amigo. (Your chat console will allow any comment made by Amigo available to your chat console) |
+| `/unignore [uživatel]` | Stop ignoring this uživatel for this session. | `/unignore Amigo` | You may now hear Amigo. (Your chat console will allow any comment made by Amigo available to your chat console) |
 | `/me [action]` | Perform a third-person action. | `/me is at home` | * John is at home |
-| `/msg [user] [msg]` | Send a private message to `[user]`. | `/msg Amigo I am sick at home.` | (At Amigo tab) John: I am sick at home. |
+| `/msg [uživatel] [msg]` | Send a private message to `[uživatel]`. | `/msg Amigo I am sick at home.` | (At Amigo tab) John: I am sick at home. |
 | `/np` | Print to chat the current song you are listening to or playing. | `/np` | (If playing) * John is playing [Peter Lambert - osu! tutorial \[Gameplay Basics\]](https://osu.ppy.sh/beatmapsets/3756#osu/22538) |
 | `/reply` or `/r` | Reply to the last received private message. | `/r Do you know any good doctor?` | (At Amigo tab) \[Previous comments\] John: I am sick at home. Amigo: Really? John: Do you know any good doctor? |
 | `/savelog` | Saves current chat tab to a text file. | `/savelog` | (A folder called "Chat" will be created at the osu! directory which will contain all the future chat tab saves) |
-| `/watch [user]` | Start spectating `[user]`. | `/watch Amigo` | * Started spectating Amigo. (When Amigo plays a beatmap that you have, you will spectate his play \[after some buffering\] with your name on the left of Amigo's screen) |
+| `/watch [uživatel]` | Start spectating `[uživatel]`. | `/watch Amigo` | * Started spectating Amigo. (When Amigo plays a beatmap that you have, you will spectate his play \[after some buffering\] with your name on the left of Amigo's screen) |
 | `/nopm` | Toggle to allow private messages either from everyone or friends only | `/nopm` | (A pop-up banner will appear at the centre detailing you are allowing everyone/friends only for private messages) |
-| `/invite [user]` | Invites `[user]` to the multiplayer room along with the link. | `/invite Nathanael` | * Nathanael has been invited to the game |
+| `/invite [uživatel]` | Invites `[uživatel]` to the multiplayer room along with the link. | `/invite Nathanael` | * Nathanael has been invited to the game |
 
 ### /keys
 
